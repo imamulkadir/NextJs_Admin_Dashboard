@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./sidebar.module.css";
+import Image from "next/image";
 import {
   MdDashboard,
   MdSupervisedUserCircle,
@@ -80,6 +81,9 @@ const menuItems = [
 const Sidebar = () => {
   return (
     <div className={styles.container}>
+      <div className={styles.user}>
+        <Image src="/noavatar.png" alt="" width={50} height={50} />
+      </div>
       <ul>
         {menuItems.map((cat) => (
           <li key={cat.title}>
