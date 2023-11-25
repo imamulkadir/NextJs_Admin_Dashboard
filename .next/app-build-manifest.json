@@ -52,6 +52,12 @@
       "static/chunks/main-app.js",
       "static/css/app/dashboard/users/[id]/page.css",
       "static/chunks/app/dashboard/users/[id]/page.js"
+    ],
+    "/login/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/login/page.css",
+      "static/chunks/app/login/page.js"
     ]
   }
 }
