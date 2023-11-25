@@ -141,3 +141,26 @@
   padding: 20px;
 }
 
+.dashboard_wrapper__BHOQf {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.dashboard_main__h9_Qo {
+  flex: 3 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard_cards__FzV77 {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.dashboard_side__cRt2d {
+  flex: 1 1;
+}
+
