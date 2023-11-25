@@ -134,6 +134,7 @@
   flex: 1 1;
   background-color: var(--bgSoft);
   padding: 20px;
+  min-height: 100vh;
 }
 
 .dashboard_content__sQime {
@@ -162,5 +163,24 @@
 
 .dashboard_side__cRt2d {
   flex: 1 1;
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/ui/dashboard/footer/footer.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+.footer_container__d0pz4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  color: var(--textSoft);
+}
+
+.footer_logo__XdvGj {
+  font-weight: bold;
+}
+
+.footer_text__471po {
+  font-size: 12px;
 }
 

@@ -59,6 +59,57 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/ui/dashboard/rightbar/rightbar.module.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************/
 .rightbar_container__euYye {
+  position: fixed;
+}
+
+.rightbar_item__bPc4s {
+  position: relative;
+  background-color: linear-gradient(to top, #182237, #253352);
+  padding: 20px 0px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.rightbar_bgContainer__MxM1_ {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+}
+
+.rightbar_bg__BduY0 {
+  object-fit: contain;
+  opacity: 0.2;
+}
+
+.rightbar_text__j4iyq {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.rightbar_notification__qWTG_ {
+  font-weight: bold;
+}
+
+.rightbar_title__ZHPzU {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--textSoft);
+}
+
+.rightbar_button__zi_a2 {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #5d57c9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: max-content;
 }
 
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\

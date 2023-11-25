@@ -1,24 +1,25 @@
-import { MdPlayCircleFilled, MdReadMore } from "react-icons/md";
-import styles from "./rightbar.module.css";
 import Image from "next/image";
+import styles from "./rightbar.module.css";
+import { MdPlayCircleFilled, MdReadMore } from "react-icons/md";
 
 const Rightbar = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.items}>
+      <div className={styles.item}>
         <div className={styles.bgContainer}>
-          <Image src="/astronaut.png" alt="" fill />
+          <Image className={styles.bg} src="/astronaut.png" alt="" fill />
         </div>
         <div className={styles.text}>
           <span className={styles.notification}>🔥 Available Now</span>
           <h3 className={styles.title}>
-            How to use the new version of the Admin Dashboard?
+            How to use the new version of the admin dashboard?
           </h3>
-          <span className={styles.subtitle}>Takes 4 minutes to learn!</span>
+          <span className={styles.subtitle}>Takes 4 minutes to learn</span>
           <p className={styles.desc}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-            aspernatur sed deleniti voluptas quibusdam voluptate amet
-            perspiciatis quod, repellendus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit eius libero perspiciatis recusandae possimus. Lorem
+            ipsum, dolor sit amet consectetur adipisicing elit. Similique,
+            itaque!
           </p>
           <button className={styles.button}>
             <MdPlayCircleFilled />
@@ -36,7 +37,9 @@ const Rightbar = () => {
           <span className={styles.subtitle}>Boost your productivity</span>
           <p className={styles.desc}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit eius libero perspiciatis recusandae possimus.
+            Reprehenderit eius libero perspiciatis recusandae possimus. Lorem,
+            ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+            error!
           </p>
           <button className={styles.button}>
             <MdReadMore />
