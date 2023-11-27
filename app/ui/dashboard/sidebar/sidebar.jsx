@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./sidebar.module.css";
 import Image from "next/image";
-import { signOut, auth } from "../../../auth";
+import { auth, signOut } from "../../../auth";
 
 import {
   MdDashboard,
@@ -107,7 +107,12 @@ const Sidebar = async () => {
           </li>
         ))}
       </ul>
-      <form action={signOut}>
+      <form
+        action={async () => {
+          "use server";
+          await signOut();
+        }}
+      >
         <button className={styles.logout}>
           <MdLogout />
           Logout

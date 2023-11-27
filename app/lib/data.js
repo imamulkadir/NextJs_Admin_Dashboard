@@ -47,7 +47,7 @@ export const fetchProducts = async (q, page) => {
     return { count, products };
   } catch (error) {
     console.log(error);
-    throw new Error("Failed to fethc users!");
+    throw new Error("Failed to fetch users!");
   }
 };
 
