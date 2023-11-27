@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Search from "../../ui/dashboard/search/search";
 import { fetchProducts } from "../../lib/data";
+import { deleteProduct } from "../../lib/actions";
 
 const ProductsPage = async ({ searchParams }) => {
   const q = searchParams?.q || "";
@@ -46,7 +47,7 @@ const ProductsPage = async ({ searchParams }) => {
               </td>
               <td>{product.desc}</td>
               <td>{product.price}</td>
-              <td>{product.createdAt?.toString().splice(4, 16)}</td>
+              <td>{product.createdAt?.toString().slice(4, 16)}</td>
               <td>{product.stock}</td>
               <td>
                 <div className={styles.buttons}>
@@ -55,9 +56,12 @@ const ProductsPage = async ({ searchParams }) => {
                       View
                     </button>
                   </Link>
-                  <button className={`${styles.button} ${styles.delete}`}>
-                    Delete
-                  </button>
+                  <form action={deleteProduct}>
+                    <input type="hidden" name="id" value={product.id} />
+                    <button className={`${styles.button} ${styles.delete}`}>
+                      Delete
+                    </button>
+                  </form>
                 </div>
               </td>
             </tr>
