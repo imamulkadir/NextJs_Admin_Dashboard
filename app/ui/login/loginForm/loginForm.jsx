@@ -17,8 +17,7 @@ const LoginForm = () => {
       <input type="text" placeholder="username" name="username" />
       <input type="password" placeholder="password" name="password" />
       <button>Login</button>
-      {/* {err && err} */}
-      console.log(err)
+      {err && err}
     </form>
   );
 };
