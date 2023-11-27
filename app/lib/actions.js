@@ -159,7 +159,6 @@ export const authenticate = async (formData) => {
   try {
     await signIn("credentials", { username, password });
   } catch (error) {
-    console.log(error);
-    throw error;
+    return { error: "Invalid logins!" };
   }
 };
