@@ -10,7 +10,7 @@ const Search = ({ placeholder }) => {
   const { replace } = useRouter();
   const pathname = usePathname();
 
-  const hadnleSearch = useDebouncedCallback((e) => {
+  const handleSearch = useDebouncedCallback((e) => {
     const params = new URLSearchParams(searchParams);
 
     params.set("page", 1);
@@ -31,7 +31,7 @@ const Search = ({ placeholder }) => {
         type="text"
         placeholder={placeholder}
         className={styles.input}
-        onChange={hadnleSearch}
+        onChange={handleSearch}
       />
     </div>
   );
