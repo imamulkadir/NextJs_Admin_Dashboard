@@ -1,5 +1,7 @@
+import { redirect } from "next/navigation";
 import { User } from "./models";
 import { connectToDb } from "./utils";
+import { revalidatePath } from "next/cache";
 
 export const addUser = async (formData) => {
   "use server";
@@ -22,4 +24,7 @@ export const addUser = async (formData) => {
     console.log(error);
     throw new Error("Failed to create user!");
   }
+
+  revalidatePath("/dashboard/users");
+  redirect("/dashboard/users");
 };
