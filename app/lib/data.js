@@ -1,6 +1,7 @@
 import { Product, User } from "./models";
 import { connectToDb } from "./utils";
 
+// Fetch All Users
 export const fetchUsers = async (q, page) => {
   const regex = new RegExp(q, "i");
 
@@ -19,6 +20,19 @@ export const fetchUsers = async (q, page) => {
   }
 };
 
+// Fetch Single User
+export const fetchUser = async (id) => {
+  try {
+    connectToDb();
+    const user = await User.findById(id);
+    return user;
+  } catch (error) {
+    console.log(error);
+    throw new Error("Failed to fetch user!");
+  }
+};
+
+// Fetch All Products
 export const fetchProducts = async (q, page) => {
   const regex = new RegExp(q, "i");
 
@@ -34,5 +48,17 @@ export const fetchProducts = async (q, page) => {
   } catch (error) {
     console.log(error);
     throw new Error("Failed to fethc users!");
+  }
+};
+
+// Fetch Single Product
+export const fetchProduct = async (id) => {
+  try {
+    connectToDb();
+    const product = await Product.findById(id);
+    return product;
+  } catch (error) {
+    console.log(error);
+    throw new Error("Failed to fetch product!");
   }
 };
